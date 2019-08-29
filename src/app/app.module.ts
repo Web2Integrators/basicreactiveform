@@ -11,19 +11,29 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { HomeComponent } from './home/home.component';
 import { ProductModule } from './products/product.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptor } from './products/auth-interceptor';
+import { CreditCardDirective } from './directives/credit-card/credit-card.directive';
+import { TooltipDirective } from './directives/tooltip/tooltip.directive';
+import { UsedirectiveComponent } from './directives/usedirective/usedirective.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CustomerComponent,
     NavLayoutComponent,
-    HomeComponent
+    HomeComponent,
+    CreditCardDirective,
+    TooltipDirective,
+    UsedirectiveComponent
   ],
   imports: [
     BrowserModule,
@@ -37,6 +47,8 @@ import { AuthInterceptor } from './products/auth-interceptor';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
+    MatFormFieldModule,
+    FlexLayoutModule,
     ProductModule
   ],
   providers: [

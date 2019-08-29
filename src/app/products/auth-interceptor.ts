@@ -15,7 +15,8 @@ export class AuthInterceptor implements HttpInterceptor {
   intercept(req: HttpRequest<any>, next: HttpHandler) {
     // Get the auth token from the service.
     const authToken = 'some token';
-    console.log("inside interceptor");
+    console.log(req);
+
     /*
     * The verbose way:
     // Clone the request and replace the original headers with

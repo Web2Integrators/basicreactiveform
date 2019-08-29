@@ -14,6 +14,7 @@ import { ProductDetailComponent } from './product-detail.component';
 import { ProductEditComponent } from './product-edit.component';
 import { ProductEditGuard } from './product-edit.guard';
 
+
 @NgModule({
   imports: [
     SharedModule,
@@ -36,6 +37,11 @@ import { ProductEditGuard } from './product-edit.guard';
       }
     ])
   ],
+  providers: [
+
+
+  ],
+
   declarations: [
     ProductListComponent,
     ProductDetailComponent,

@@ -5,7 +5,8 @@ import { ProductService } from './product.service';
 
 @Component({
   templateUrl: './product-list.component.html',
-  styleUrls: ['./product-list.component.css']
+  styleUrls: ['./product-list.component.css'],
+  
 })
 export class ProductListComponent implements OnInit {
   pageTitle = 'Product List';
@@ -27,6 +28,7 @@ export class ProductListComponent implements OnInit {
   products: Product[] = [];
 
   constructor(private productService: ProductService) { }
+
 
 
   performFilter(filterBy: string): Product[] {
